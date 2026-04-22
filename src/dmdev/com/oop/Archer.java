@@ -1,6 +1,8 @@
 package dmdev.com.oop;
 
-public class Archer extends Hero{
+import dmdev.com.oop3.weapon.RangeWeapon;
+
+public class Archer<T extends RangeWeapon> extends Hero<T> {
 
     private Wolf wolf;
 

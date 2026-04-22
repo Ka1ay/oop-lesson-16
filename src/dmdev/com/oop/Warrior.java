@@ -1,6 +1,8 @@
 package dmdev.com.oop;
 
-public class Warrior extends Hero {
+import dmdev.com.oop3.weapon.MeleeWeapon;
+
+public class Warrior<T extends MeleeWeapon> extends Hero<T> {
 
 
     public Warrior(String name, int damage) {
