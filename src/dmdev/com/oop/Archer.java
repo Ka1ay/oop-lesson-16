@@ -15,7 +15,6 @@ public class Archer<T extends RangeWeapon> extends Hero<T> {
     public void attackEnemy(Enemy enemy) {
         System.out.println(getName() + " стрельнул из лука в " + enemy.getName());
         wolf.attackEnemy(enemy);
-
     }
 
     public class Wolf {

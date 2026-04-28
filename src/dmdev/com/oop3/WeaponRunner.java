@@ -1,6 +1,7 @@
 package dmdev.com.oop3;
 
 import dmdev.com.oop.Archer;
+import dmdev.com.oop.Hero;
 import dmdev.com.oop.Mage;
 import dmdev.com.oop.Warrior;
 import dmdev.com.oop3.weapon.Bow;
@@ -19,5 +20,12 @@ public class WeaponRunner {
         Mage<Wand> mage = new Mage<>("Колдун", 20);
         mage.setWeapon(new Wand());
 
+        printWeaponDamage(warrior);
+    }
+
+    public static void printWeaponDamage(Hero<Sword> hero) {
+        Sword weapon = hero.getWeapon();
+        hero.setWeapon(new Sword());
+        System.out.println(hero.getWeapon().getDamage());
     }
 }
